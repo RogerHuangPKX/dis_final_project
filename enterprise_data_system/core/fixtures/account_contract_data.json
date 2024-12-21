@@ -1,0 +1,105 @@
+[
+    {
+        "model": "core.lineofbusiness",
+        "pk": 1,
+        "fields": {
+            "name": "Life Insurance"
+        }
+    },
+    {
+        "model": "core.seriesname",
+        "pk": 1,
+        "fields": {
+            "name": "Premium Series"
+        }
+    },
+    {
+        "model": "core.planname",
+        "pk": 1,
+        "fields": {
+            "name": "Standard Plan"
+        }
+    },
+    {
+        "model": "core.account",
+        "pk": 1,
+        "fields": {
+            "name": "John Smith Account",
+            "name2": null,
+            "company_code": 1001,
+            "tax_id": "123456789",
+            "emp_count": 1,
+            "status": "A",
+            "status_date": "2024-01-01"
+        }
+    },
+    {
+        "model": "core.account",
+        "pk": 2,
+        "fields": {
+            "name": "Mary Johnson Account",
+            "name2": null,
+            "company_code": 1002,
+            "tax_id": "987654321",
+            "emp_count": 1,
+            "status": "A",
+            "status_date": "2024-01-01"
+        }
+    },
+    {
+        "model": "core.contract",
+        "pk": 1,
+        "fields": {
+            "contract_num": "CNT001",
+            "account_id": 1,
+            "business_id": 1,
+            "series_id": 1,
+            "plan_id": 1,
+            "coverage": "100000",
+            "duration": 12,
+            "status": "A",
+            "status_date": "2024-01-01",
+            "in_force": "Y",
+            "language": "English"
+        }
+    },
+    {
+        "model": "core.contract",
+        "pk": 2,
+        "fields": {
+            "contract_num": "CNT002",
+            "account_id": 2,
+            "business_id": 1,
+            "series_id": 1,
+            "plan_id": 1,
+            "coverage": "150000",
+            "duration": 24,
+            "status": "A",
+            "status_date": "2024-01-01",
+            "in_force": "Y",
+            "language": "English"
+        }
+    },
+    {
+        "model": "core.contractpayment",
+        "pk": 1,
+        "fields": {
+            "contract": 1,
+            "bill_method": "Monthly",
+            "premium": "1000.00",
+            "auto_loan": "N",
+            "payment_limit": "10000.00"
+        }
+    },
+    {
+        "model": "core.contractpayment",
+        "pk": 2,
+        "fields": {
+            "contract": 2,
+            "bill_method": "Monthly",
+            "premium": "1500.00",
+            "auto_loan": "N",
+            "payment_limit": "15000.00"
+        }
+    }
+]

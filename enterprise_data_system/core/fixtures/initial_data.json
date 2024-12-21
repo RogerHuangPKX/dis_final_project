@@ -1,0 +1,58 @@
+[
+    {
+        "model": "core.customer",
+        "pk": 1,
+        "fields": {
+            "last_name": "Smith",
+            "first_name": "John",
+            "middle_init": "A",
+            "suffix": null,
+            "salutation": "Mr.",
+            "gender": "M",
+            "language": "English",
+            "start_date": "2024-01-01",
+            "end_date": null
+        }
+    },
+    {
+        "model": "core.customer",
+        "pk": 2,
+        "fields": {
+            "last_name": "Johnson",
+            "first_name": "Mary",
+            "middle_init": "B",
+            "suffix": null,
+            "salutation": "Ms.",
+            "gender": "F",
+            "language": "English",
+            "start_date": "2024-01-01",
+            "end_date": null
+        }
+    },
+    {
+        "model": "core.customeridentity",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "dob": "1980-01-01",
+            "ssn": "123-45-6789",
+            "ssn_type": "S",
+            "legacy_id": null,
+            "withholding": "Y",
+            "email": "john.smith@example.com"
+        }
+    },
+    {
+        "model": "core.customeridentity",
+        "pk": 2,
+        "fields": {
+            "customer": 2,
+            "dob": "1985-02-15",
+            "ssn": "987-65-4321",
+            "ssn_type": "S",
+            "legacy_id": null,
+            "withholding": "N",
+            "email": "mary.johnson@example.com"
+        }
+    }
+]

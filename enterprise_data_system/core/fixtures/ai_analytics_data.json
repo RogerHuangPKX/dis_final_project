@@ -1,0 +1,90 @@
+[
+    {
+        "model": "core.customerfeedback",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "feedback_text": "Great service!",
+            "key_topics": ["service", "satisfaction"],
+            "sentiment_score": 0.9,
+            "created_at": "2024-01-01T10:00:00Z"
+        }
+    },
+    {
+        "model": "core.customerfeedback",
+        "pk": 2,
+        "fields": {
+            "customer": 2,
+            "feedback_text": "Service could be better",
+            "key_topics": ["service", "improvement"],
+            "sentiment_score": 0.4,
+            "created_at": "2024-01-01T11:00:00Z"
+        }
+    },
+    {
+        "model": "core.callrecord",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "duration": 300,
+            "call_text": "Customer inquired about policy details",
+            "call_time": "2024-01-01T12:00:00Z",
+            "sentiment_score": 0.8,
+            "key_topics": ["policy", "inquiry"]
+        }
+    },
+    {
+        "model": "core.callrecord",
+        "pk": 2,
+        "fields": {
+            "customer": 2,
+            "duration": 400,
+            "call_text": "Customer requested policy modification",
+            "call_time": "2024-01-01T13:00:00Z",
+            "sentiment_score": 0.6,
+            "key_topics": ["policy", "modification"]
+        }
+    },
+    {
+        "model": "core.chronicdiseaserisk",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "risk_score": 0.3,
+            "risk_factors": ["age", "lifestyle"],
+            "prediction_date": "2024-01-01T14:00:00Z",
+            "confidence_score": 0.85
+        }
+    },
+    {
+        "model": "core.chronicdiseaserisk",
+        "pk": 2,
+        "fields": {
+            "customer": 2,
+            "risk_score": 0.7,
+            "risk_factors": ["medical_history", "lifestyle"],
+            "prediction_date": "2024-01-01T15:00:00Z",
+            "confidence_score": 0.9
+        }
+    },
+    {
+        "model": "core.churnprediction",
+        "pk": 1,
+        "fields": {
+            "customer": 1,
+            "churn_probability": 0.2,
+            "contributing_factors": ["high_satisfaction", "long_tenure"],
+            "prediction_date": "2024-01-01T16:00:00Z"
+        }
+    },
+    {
+        "model": "core.churnprediction",
+        "pk": 2,
+        "fields": {
+            "customer": 2,
+            "churn_probability": 0.6,
+            "contributing_factors": ["price_sensitivity", "competitor_offers"],
+            "prediction_date": "2024-01-01T17:00:00Z"
+        }
+    }
+]
